@@ -10,7 +10,7 @@
         <!--Reader View Controller-->
         <scene sceneID="Yoc-cr-z0i">
             <objects>
-                <viewController id="RXc-mx-pbG" customClass="QRReaderViewController" customModule="Practical6_MAD2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RXc-mx-pbG" customClass="QRReaderViewController" customModule="Practical6_MAD2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyF-dW-jsY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
         <!--Generator View Controller-->
         <scene sceneID="8W0-8V-2RF">
             <objects>
-                <viewController id="Hxb-R9-XGB" customClass="QRGeneratorViewController" customModule="Practical6_MAD2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hxb-R9-XGB" customClass="QRGeneratorViewController" customModule="Practical6_MAD2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gif-36-sTK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
