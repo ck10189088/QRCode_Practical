@@ -14,9 +14,13 @@
 		8710EF3E2395FC6E009D0E0F /* Practical6_MAD2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8710EF3C2395FC6E009D0E0F /* Practical6_MAD2.xcdatamodeld */; };
 		8710EF402395FC6F009D0E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710EF3F2395FC6F009D0E0F /* Assets.xcassets */; };
 		8710EF432395FC6F009D0E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8710EF412395FC6F009D0E0F /* LaunchScreen.storyboard */; };
+		8710EF4D23960282009D0E0F /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710EF4C23960282009D0E0F /* QRReaderViewController.swift */; };
+		8710EF5323961116009D0E0F /* QRGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710EF5223961116009D0E0F /* QRGeneratorViewController.swift */; };
+		97C7E81560DFD69605760B7A /* libPods-Practical6_MAD2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC077C695C23F14B4200C7 /* libPods-Practical6_MAD2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85E88B09D641E759CDA1DAC5 /* Pods-Practical6_MAD2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical6_MAD2.release.xcconfig"; path = "Target Support Files/Pods-Practical6_MAD2/Pods-Practical6_MAD2.release.xcconfig"; sourceTree = "<group>"; };
 		8710EF302395FC6E009D0E0F /* Practical6_MAD2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical6_MAD2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8710EF332395FC6E009D0E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8710EF352395FC6E009D0E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		8710EF3F2395FC6F009D0E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8710EF422395FC6F009D0E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8710EF442395FC6F009D0E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710EF4C23960282009D0E0F /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
+		8710EF5223961116009D0E0F /* QRGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGeneratorViewController.swift; sourceTree = "<group>"; };
+		A5EC077C695C23F14B4200C7 /* libPods-Practical6_MAD2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Practical6_MAD2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6526D5F6A8C32EADB46CD29 /* Pods-Practical6_MAD2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical6_MAD2.debug.xcconfig"; path = "Target Support Files/Pods-Practical6_MAD2/Pods-Practical6_MAD2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C7E81560DFD69605760B7A /* libPods-Practical6_MAD2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109E4334E49BDF895C961708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5EC077C695C23F14B4200C7 /* libPods-Practical6_MAD2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C0670C7AAF66F4EEEBDC782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6526D5F6A8C32EADB46CD29 /* Pods-Practical6_MAD2.debug.xcconfig */,
+				85E88B09D641E759CDA1DAC5 /* Pods-Practical6_MAD2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8710EF272395FC6E009D0E0F = {
 			isa = PBXGroup;
 			children = (
 				8710EF322395FC6E009D0E0F /* Practical6_MAD2 */,
 				8710EF312395FC6E009D0E0F /* Products */,
+				1C0670C7AAF66F4EEEBDC782 /* Pods */,
+				109E4334E49BDF895C961708 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +86,12 @@
 		8710EF322395FC6E009D0E0F /* Practical6_MAD2 */ = {
 			isa = PBXGroup;
 			children = (
+				8710EF5223961116009D0E0F /* QRGeneratorViewController.swift */,
 				8710EF332395FC6E009D0E0F /* AppDelegate.swift */,
 				8710EF352395FC6E009D0E0F /* SceneDelegate.swift */,
 				8710EF372395FC6E009D0E0F /* ViewController.swift */,
 				8710EF392395FC6E009D0E0F /* Main.storyboard */,
+				8710EF4C23960282009D0E0F /* QRReaderViewController.swift */,
 				8710EF3F2395FC6F009D0E0F /* Assets.xcassets */,
 				8710EF412395FC6F009D0E0F /* LaunchScreen.storyboard */,
 				8710EF442395FC6F009D0E0F /* Info.plist */,
@@ -77,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8710EF472395FC6F009D0E0F /* Build configuration list for PBXNativeTarget "Practical6_MAD2" */;
 			buildPhases = (
+				E9D946A2C0F0BEF3739A800A /* [CP] Check Pods Manifest.lock */,
 				8710EF2C2395FC6E009D0E0F /* Sources */,
 				8710EF2D2395FC6E009D0E0F /* Frameworks */,
 				8710EF2E2395FC6E009D0E0F /* Resources */,
@@ -136,13 +167,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E9D946A2C0F0BEF3739A800A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Practical6_MAD2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8710EF2C2395FC6E009D0E0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8710EF3E2395FC6E009D0E0F /* Practical6_MAD2.xcdatamodeld in Sources */,
+				8710EF5323961116009D0E0F /* QRGeneratorViewController.swift in Sources */,
 				8710EF382395FC6E009D0E0F /* ViewController.swift in Sources */,
+				8710EF4D23960282009D0E0F /* QRReaderViewController.swift in Sources */,
 				8710EF342395FC6E009D0E0F /* AppDelegate.swift in Sources */,
 				8710EF362395FC6E009D0E0F /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +344,7 @@
 		};
 		8710EF482395FC6F009D0E0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6526D5F6A8C32EADB46CD29 /* Pods-Practical6_MAD2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +362,7 @@
 		};
 		8710EF492395FC6F009D0E0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E88B09D641E759CDA1DAC5 /* Pods-Practical6_MAD2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
